@@ -1,6 +1,6 @@
 name: docker-practice
   
-  on:
+on:
   push:
     branches: [ "main" ]
     
