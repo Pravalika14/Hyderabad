@@ -1,0 +1,18 @@
+name: docker-practice
+  
+  push:
+    branches: [ "main" ]
+    
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu
+    
+    steps:
+      - uses: actions/checkout@v3
+
+        name: Docker Image
+        run: echo Oy Hello, there!
+        run: docker pull pravalika98/pravalika_m:v1
